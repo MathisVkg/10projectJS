@@ -1,0 +1,69 @@
+
+body {
+    margin: O;
+    background-color: #303030;
+    font-family: "lato", sans-serif;
+    background-image: url(wallhaven-5wj225.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.countTitle {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.705);
+    font-size: 60px;
+    color: white;
+    margin-top: 15%;
+}
+
+.timerGroup {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.705);
+}
+.timer {
+    font-size: 55px;
+    margin: 30px;
+    margin-bottom: 0;
+}
+
+.days {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.minutes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seconds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.daysText {
+    font-size: 20px;
+    margin-top: 0;
+}
+.hoursText {
+    font-size: 20px;
+    margin-top: 0;
+}
+.minText {
+    font-size: 20px;
+    margin-top: 0;
+}
+.secText {
+    font-size: 20px;
+    margin-top: 0;
+}
