@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<title>PasswordGenerator</title>
+</head>
+<body>
+    <div class="containerGlobal">
+        <div class="container">
+            <h2 class="title">Password Generator</h2>
+            <div class="selectGroup1">
+                <p class="lenght">Select password lenght</p>
+                <form action="get">
+                    <select name="select" id="selectLenght">
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>        
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </form>
+            </div>
+            <div class="selectGroup2">
+                <p class="lenght">Add special charactere</p>
+                <form action="get">
+                    <select name="select" id="selectCharacter" >
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <button id="submit">Submit</button>
+    </div>
+    <h2 class="passGenered" id="passGenerate"></h2>
+    <script src="script.js"></script>
+</body>
+</html>

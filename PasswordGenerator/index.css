@@ -1,0 +1,60 @@
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+    background-color: #303030;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+/* .containerGlobal {
+    box-shadow: 2px 0px 4px rgb(0, 0, 0, 0.8);
+} */
+
+.container {
+    padding: 1.5rem;
+    background-color: crimson;
+    border-radius: 8px 8px 0 0;
+}
+.selectGroup1 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.selectGroup2 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.lenght {
+    margin-right: 15px;
+}
+
+.title {
+    font-size: 28px;
+    text-shadow: 2px 2px 4px black;
+}
+
+select {
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button {
+    border: none;
+    border-radius: 0 0 4px 4px;
+    background-color: rgb(131, 9, 33);
+    padding: 15px;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+}
+button:hover {
+    background-color: rgb(100, 10, 28);
+    transform: translateY(-6px);
+}
