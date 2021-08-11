@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital@1&display=swap" rel="stylesheet">
+<title>GithubProfil</title>
+</head>
+<body>
+    <div class="container" id="searchCont">
+        <h2 class="title">Search github profil</h2>
+        <input type="text" placeholder="Github name" class="search" onkeydown="search(this)"/>
+    </div>
+    <div class="containerApi" id="resultApi" style="display: none;">
+        <div class="infoUser">
+            <div class="ImgandFollow">
+                <img src="" alt="githubPP" id="avatarUrl">
+                <p class="textSup" ><span id="publicRepo" class="spanText"></span><strong>Repositories</strong></p>
+                <p class="textSup" ><span id="followersUser" class="spanText"></span><strong>Followers</strong></p>
+                <p class="textSup" ><span id="followingUser" class="spanText"></span><strong>Followings</strong></p>
+            </div>
+            <div class="textUser">
+                <div class="infoName">
+                    <a href="" class="userName" id="loginUser"></a>
+                    <p class="bio" id="bioUser"></p>
+                    <p class="location" id=locaUser></p>
+                </div>
+                <div class="containerRepo" id="targetContainer"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

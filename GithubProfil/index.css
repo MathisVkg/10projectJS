@@ -1,0 +1,115 @@
+
+body {
+    background-color: #303030;
+    color: white;
+    font-family: "lato", sans-serif;
+    margin: 0;
+}
+
+
+.container {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: rgb(111, 201, 93); */
+    background-image: linear-gradient( 135deg, #F97794 10%, #623AA2 100%);
+    box-shadow: 2px 2px 4px #4b4a4a;
+    width: 400px;
+    border-radius: 4px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.search {
+    border: none;
+    border-radius: 4px;
+    padding: 5px 180px 5px 20px;
+}
+
+
+.containerApi {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: linear-gradient( 135deg, #F97794 10%, #623AA2 100%);
+    box-shadow: 2px 2px 4px #4b4a4a;
+    padding: 20px 180px 20px 20px;
+    border-radius: 4px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+img {
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px #4b4a4a;
+    width: 200px;
+}
+
+.infoUser {
+    display: flex;
+    font-size: 18px;
+}
+.userName {
+    font-size: 28px;
+    text-shadow: 2px 2px 4px #4b4a4a;
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.bio {
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+.location {
+    margin-top: 15px;
+}
+.textUser {
+    margin-left: 40px;
+}
+.infoName {
+    display: flex;
+    flex-direction: column;
+}
+.textSup {
+    margin-right: 20px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    text-shadow: 2px 2px 4px #4b4a4a;
+}
+.spanText {
+    margin-right: 10px;
+}
+.ImgandFollow {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerRepo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 420px;
+    margin-top: 25px;
+}
+.repoClass {
+    text-decoration: none;
+    color: white;
+    background-color: #303030;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px;
+    transition: 0.5s ease-in-out;
+}
+.repoClass:hover {
+    transform: translateY(-5px);
+    background-color: white;
+    color: black;
+}
