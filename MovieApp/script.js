@@ -27,7 +27,6 @@ function getMovie() {
     .then((res) => res.json())
     .then((data) => {
         stockData = data;
-        console.log(stockData);
         for(count = 0; count < 20; count++) {
             card = document.createElement("div");
             cardTitle = document.createElement("p");
@@ -62,7 +61,7 @@ function getMovie() {
             getID();
         }
         pageCheck();
-        console.log(data);
+        // console.log(data);
     });
 }
 

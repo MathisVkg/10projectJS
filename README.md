@@ -39,3 +39,8 @@ You can see the project with this link to the github page.
 - Enter Location
 - Get weather
 - Icons
+
+7. Mobile Navigation
+- Display nav on click button
+- animation
+- open/close
