@@ -43,4 +43,9 @@ You can see the project with this link to the github page.
 7. Mobile Navigation
 - Display nav on click button
 - animation
-- open/close
+- open/c
+
+8. Restaurant Menu
+- button for select part
+- fun button
+- js generate dishe

@@ -1,0 +1,87 @@
+
+body {
+    background-color: #303030;
+    font-family: "lato", sans-serif;
+    margin: 0;
+    margin-bottom: 150px;
+}
+
+.menu {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    margin-top: 7%;
+}
+
+.allDishes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cardEntry {
+    background-color: white;
+    width: 200px;
+    border-radius: 0 0 4px 4px;
+    /* padding-bottom: 20px; */
+    margin: 10px;
+    box-shadow: 1px 1px 0px #c9c9c9,
+                2px 2px 0px #c9c9c9,
+                3px 3px 0px #c9c9c9;
+    transition: 0.5s ease-in-out;
+}
+.cardImg {
+    width: 200px;
+    height: 165px;
+}
+.cardEntry:hover {
+    transform: translateY(-5px);
+    background-color: #1f1e1e;
+    color: white;
+}
+
+
+.cardName {
+    margin-left: 10px;
+    width: 185px;
+}
+.cardInfo {
+    margin-left: 10px;
+    width: 185px;
+}
+
+
+
+
+
+
+
+.restauTitle {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    border-bottom: 2.5px solid #f37928;
+    width: 260px;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
+button {
+    border: 2.5px solid #f37928;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 15px 35px;
+    background-color: unset;
+    margin: 10px;
+    transition: 0.5s ease-in-out;
+}
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 0 #ee7d31;
+}
