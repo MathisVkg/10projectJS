@@ -56,7 +56,20 @@ body {
     background-color: white;
     color: black;
 }
+.cardMovie:hover .imgMovie {
+    display: none;
+    /* height: 20px; */
+}
+.cardMovie:hover .description {
+    display: block;
+    padding: 15px;
+    font-size: 12px;
+    /* height: 20px; */
+}
 
+.description {
+    display: none;
+}
 
 .nameFlex {
     display: flex;

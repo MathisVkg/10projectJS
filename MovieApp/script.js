@@ -4,15 +4,14 @@ const SEARCHAPI = "https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5
 const IMGPATH = "https://image.tmdb.org/t/p/w1280";
 let pageNumber = 1;
 let cardsTag = document.getElementById("cardsTag");
-let searchTag = document.getElementById("searchTag");
-let searchValue = document.getElementById("searchValue");
-let searchMovie;
+// let cardsTagSearch = document.getElementById("cardsTagSearch");
+// let searchTag = document.getElementById("searchTag");
 
-searchTag.addEventListener("click", () => {
-    searchMovie = document.getElementById("searchValue").value;
-    console.log(searchMovie);
-})
 
+// searchTag.addEventListener("click", () => {
+//     stockValue = document.getElementById("searchValue").value;
+//     console.log(stockValue);
+// })
 
 
 function getMovie() {
@@ -25,6 +24,7 @@ function getMovie() {
             let cardScore = document.createElement("p");
             let cardImg = document.createElement("img");
             let divTitle = document.createElement("div");
+            let cardDes = document.createElement("p");
             divTitle.classList.add("nameFlex");
             
             card.classList.add("cardMovie");
@@ -47,8 +47,13 @@ function getMovie() {
                 cardImg.classList.add("imgMovie");
             }
             
+            cardDes.classList.add("description");
+            cardDes.innerHTML = data.results[count].overview;
+
+
             card.appendChild(cardImg);
             card.appendChild(divTitle);
+            card.appendChild(cardDes);
             divTitle.appendChild(cardTitle);
             divTitle.appendChild(cardScore);
             cardsTag.appendChild(card);
