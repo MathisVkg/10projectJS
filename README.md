@@ -8,6 +8,7 @@ You can see the project with this link to the github page.
 - <a href="https://mathisvkg.github.io/10projectJS/GithubProfil/index.html" target="_blank">Github Profil</a>
 - <a href="https://mathisvkg.github.io/10projectJS/PasswordGenerator/index.html" target="_blank">Password Generator</a>
 - <a href="https://mathisvkg.github.io/10projectJS/MobileNavigation/index.html" target="_blank">Mobile navigation</a>
+- <a href="https://mathisvkg.github.io/10projectJS/MenuRestaurant/index.html" target="_blank">Menu Restaurant</a>
 
 
 ## Project overview
