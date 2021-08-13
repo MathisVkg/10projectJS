@@ -5,7 +5,7 @@ let input = document.getElementById("inputTag");
 let clear = document.getElementById("clearTag");
 let receive = document.getElementById("receiveTag");
 let error = document.getElementById("errorTag");
-let trashTarget;
+// let trashTarget = document.getElementById("trashTag");
 let itemGroupTarget;
 let itemGroup;
 let item;
@@ -14,7 +14,9 @@ let trash;
 let buttonGroup;
 let itemNumber = 0;
 
-
+// trashTarget.addEventListener("click", () => {
+//     console.log("check");
+// })
 
 submit.addEventListener("click", () => {
     if(input.value != "") {
@@ -46,20 +48,19 @@ clear.addEventListener("click", () => {
 function createButton() {
     buttonGroup = document.createElement("div");
     buttonGroup.classList.add("buttonGroup");
-    trash = document.createElement("img");
+    trash = document.createElement("button");
     trash.classList.add("listButton");
     trash.setAttribute("id", "trashTag");
-    trash.src = "img/trash-alt-solid.svg";
+    trash.innerHTML = "<img src='img/trash-alt-solid.svg' alt='trash'>";
 
-    edit = document.createElement("img");
+    edit = document.createElement("button");
     edit.classList.add("listButton");
     edit.setAttribute("id", "editTag");
-    edit.src = "img/edit-solid.svg";
+    edit.innerHTML = "<img src='img/edit-solid.svg' alt='trash'>";
 
     buttonGroup.appendChild(edit);
     buttonGroup.appendChild(trash);
     itemGroup.appendChild(buttonGroup);
-    trashTarget = document.getElementById("trashTag");
 }
 
 
