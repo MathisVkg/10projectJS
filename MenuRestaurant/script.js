@@ -9,7 +9,6 @@ let buttonEntry = document.getElementById("entryTag");
 let buttonDishe = document.getElementById("disheTag");
 let buttonDessert = document.getElementById("dessertTag");
 
-
 let card;
 let cardName;
 let cardInfo;
@@ -27,6 +26,7 @@ buttonDessert.addEventListener("click", () => {
     searchDessert();
 })
 
+
 function allMenu() {
     for(let i = 0; i < dishe.length; i++) {
         document.getElementById("dishe" + i).setAttribute("style", "display: block")
@@ -38,7 +38,6 @@ function allMenu() {
         document.getElementById("entry" + i).setAttribute("style", "display: block")
     }
 }
-
 function searchEntry() {
     for(let i = 0; i < entry.length; i++) {
         document.getElementById("entry" + i).setAttribute("style", "display: block")
@@ -93,8 +92,13 @@ function getEntry() {
         cardImg.classList.add("cardImg");
         cardImg.src = img1[i];
 
+        cardDes = document.createElement("p");
+        cardDes.classList.add("cardDes");
+        cardDes.innerHTML = des1[i];
+
         card.appendChild(cardImg);
         card.appendChild(cardName);
+        card.appendChild(cardDes)
         card.appendChild(cardInfo);
         allTarget.appendChild(card);
     }       
@@ -118,8 +122,14 @@ function getDishe() {
         cardImg.classList.add("cardImg");
         cardImg.src = img2[i];
 
+        cardDes = document.createElement("p");
+        cardDes.classList.add("cardDes");
+        cardDes.innerHTML = des2[i];
+
+
         card.appendChild(cardImg);
         card.appendChild(cardName);
+        card.appendChild(cardDes)
         card.appendChild(cardInfo);
         allTarget.appendChild(card);
     }  
@@ -143,8 +153,13 @@ function getDessert() {
         cardImg.classList.add("cardImg");
         cardImg.src = img3[i];
 
+        cardDes = document.createElement("p");
+        cardDes.classList.add("cardDes");
+        cardDes.innerHTML = des3[i];
+
         card.appendChild(cardImg);
         card.appendChild(cardName);
+        card.appendChild(cardDes)
         card.appendChild(cardInfo);
         allTarget.appendChild(card);
     } 
