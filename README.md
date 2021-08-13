@@ -16,10 +16,8 @@ You can see the project with this link to the github page.
 - Future date
 - Timer
 
-2. QuizApp
-- Question random
-- Select answer
-- Show final score
+2. GroceryApp
+
 
 3. Movie App
 - List of movies
@@ -36,10 +34,7 @@ You can see the project with this link to the github page.
 - Generate random pass
 - Select lenght
 
-6. Weather App
-- Enter Location
-- Get weather
-- Icons
+6. 
 
 7. Mobile Navigation
 - Display nav on click button
@@ -50,3 +45,7 @@ You can see the project with this link to the github page.
 - button for select part
 - fun button
 - js generate dishe
+
+9. 
+
+10. 
