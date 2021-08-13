@@ -5,3 +5,97 @@ body {
     background-color: #303030;
     font-family: "lato", sans-serif;
 }
+
+
+.container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    background-color: #50C878;
+    box-shadow: 2px 2px 0 #c5c5c5,
+                3px 3px 0 #c5c5c5;
+    border-radius: 4px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 35px;
+}
+.inputGroup {
+    display: flex;
+}
+
+.groceryTitle {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 0 #303030;
+}
+.grocerySub {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+
+
+.inputGroup {
+    margin-top: 15px;
+}
+.inputAdd {
+    border: unset;
+    padding: 5px 15px;
+    width: 380px;
+}
+.submit {
+    border: unset;
+    padding: 5px 15px;
+    margin-left: 25px;
+    transition: 0.5s ease-in-out;
+}
+.submit:hover {
+    transform: translateY(-3px);
+    background-color: #7a7a7a;
+}
+.buttonGroup {
+    display: flex;
+}
+.itemList {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: #303030;
+    border-radius: 4px;
+    padding: 2px 10px;
+}
+.listButton {
+    width: 20px;
+    margin: 5px;
+    margin-left: 10px;
+    transition: 0.5s ease-in-out;
+}
+.listButton:hover {
+    transform: translateY(-3px);
+}
+
+.error {
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    text-shadow: 2px 2px 0 #ca3232;
+}
+.clear {
+    font-size: 15px;
+    color: #ca3232;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 25px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.clear:hover {
+    transform: translateY(-3px);
+}

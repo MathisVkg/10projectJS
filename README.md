@@ -17,7 +17,9 @@ You can see the project with this link to the github page.
 - Timer
 
 2. GroceryApp
-
+- Add thing to a list
+- Delete what we add
+- Maybe bonus
 
 3. Movie App
 - List of movies
