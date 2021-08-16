@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="icon" href="dice-d20-solid.svg" />
+<title>form Website</title>
+</head>
+<body>
+    <div class="containerProbs" id="containerProbs" style="display: none;">
+        <h2 class="probTitle">What's your problems ?</h2>
+        <div class="containerButton">
+            <button class="buttonProb" id="buttonTag1">Hardware</button>
+            <button class="buttonProb" id="buttonTag2">Software</button>
+            <button class="buttonProb" id="buttonTag3">Shipping</button>
+            <button class="buttonProb" id="buttonTag4">Payement</button>
+        </div>
+    </div>
+    <div class="containerForm" id="containerForm" >
+        <div class="formCont">
+            <h2 class="register">Registration form</h2>
+            <div class="nameGroup">
+                <label for="name">Name</label>
+                <input type="text" name="name" value="" id="inputName" placeholder="Name">
+                <p class="errorMessage" id="errorName" style="display: none;"></p>
+            </div>
+            <div class="lastnameGroup">
+                <label for="lastname">Lastname</label>
+                <input type="text" name="lastname" value="" id="inputLastname" placeholder="Lastname">
+                <p class="errorMessage" id="errorLastname" style="display: none;"></p>
+            </div>
+            <div class="cityGroup">
+                <label for="city">City</label>
+                <input type="text" name="city" value="" id="inputCity" placeholder="Belgium">
+                <p class="errorMessage" id="errorCity" style="display: none;"></p>
+            </div>
+            <p class="gender">Gender</p>
+            <select name="gender" id="genderTag">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <textarea name="message" value="" cols="30" rows="10" id="messageTag" placeholder="Add a coment"></textarea>
+            <button class="submit" id="submitTag">Submit</button>
+        </div>
+    </div>
+    <div class="containerThx" style="display: none;" id="thksTag">
+        <h2 class="thaksTitle">Thanks You for your message</h2>
+        <p class="legalMention">Your message has been sent to our team and will be processed as soon as possible.</p>
+        <p class="recap">Summary</p>
+        <p class="probsSum" id="probsSum"></p>
+        <p class="nameSum" id="nameSum"></p>
+        <p class="lastnameSum" id="lastnameSum"></p>
+        <p class="citySum" id="citySum"></p>
+        <p class="messageSum" id="messageSum"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

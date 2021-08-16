@@ -9,7 +9,7 @@ You can see the project with this link to the github page.
 - <a href="https://mathisvkg.github.io/10projectJS/PasswordGenerator/index.html" target="_blank">Password Generator</a>
 - <a href="https://mathisvkg.github.io/10projectJS/MobileNavigation/index.html" target="_blank">Mobile navigation</a>
 - <a href="https://mathisvkg.github.io/10projectJS/MenuRestaurant/index.html" target="_blank">Menu Restaurant</a>
-- <a href="https://mathisvkg.github.io/10projectJS/GroceryApp/index.html" target="_blank">Grocery App</a>
+- <a href="https://mathisvkg.github.io/10projectJS/GroceryApp/index.html" target="_blank">Grocery List App</a>
 
 
 ## Project overview
@@ -37,7 +37,10 @@ You can see the project with this link to the github page.
 - Generate random pass
 - Select lenght
 
-6. 
+6. Form Website
+- get data
+- alert
+- check all input full
 
 7. Mobile Navigation
 - Display nav on click button
@@ -46,9 +49,15 @@ You can see the project with this link to the github page.
 
 8. Restaurant Menu
 - button for select part
-- fun button
 - js generate dishe
 
 9. 
 
 10. 
+
+
+## Thing to do:
+
+2. Make trash and edit button fonctional
+3. Make search bar fonctional
+

@@ -5,7 +5,7 @@ let input = document.getElementById("inputTag");
 let clear = document.getElementById("clearTag");
 let receive = document.getElementById("receiveTag");
 let error = document.getElementById("errorTag");
-// let trashTarget = document.getElementById("trashTag");
+let trashTarget;
 let itemGroupTarget;
 let itemGroup;
 let item;
@@ -14,9 +14,8 @@ let trash;
 let buttonGroup;
 let itemNumber = 0;
 
-// trashTarget.addEventListener("click", () => {
-//     console.log("check");
-// })
+
+
 
 submit.addEventListener("click", () => {
     if(input.value != "") {
@@ -30,11 +29,27 @@ submit.addEventListener("click", () => {
     }
 })
 
+// function checkButton() {
+//     if(itemNumber != 0) {
+//         trashTarget = document.getElementById("trashTag");
+//         trashTarget.addEventListener("click", () => {
+//             // itemGroupTarget = document.getElementById("itemListTag");
+//             // itemGroupTarget.remove();
+//             console.log("check");
+//         })
+
+//     }
+// }
+// checkButton();
+
+
 clear.addEventListener("click", () => {
     let i;
     for(i = 0; i < itemNumber; i++) {
-        clearAll();
+        itemGroupTarget = document.getElementById("itemListTag" + i);
+        itemGroupTarget.remove();
         error.innerHTML = "";
+        p = 0;
     }
     if(i === itemNumber) {
         itemNumber = 0;
@@ -64,20 +79,16 @@ function createButton() {
 }
 
 
+let p = 0;
 function createItem() {
     itemGroup = document.createElement("div");
     item = document.createElement("p");
     itemGroup.classList.add("itemList");
-    itemGroup.setAttribute("id", "itemListTag");
+    itemGroup.setAttribute("id", "itemListTag" + p);
     item.classList.add("item");
     item.innerHTML = input.value;
-
+    p++;
     itemGroup.appendChild(item);
     receive.appendChild(itemGroup);
 }
 
-
-function clearAll() {
-    itemGroupTarget = document.getElementById("itemListTag");
-    itemGroupTarget.remove();
-}
