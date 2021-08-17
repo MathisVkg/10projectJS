@@ -52,11 +52,11 @@ submit.addEventListener("click", () => {
 })
 
 function writeSum() {
-    document.getElementById("probsSum").innerHTML = "Your problems: " + buttonValue;
-    document.getElementById("lastnameSum").innerHTML = "Lastname: " + inputLastname.value;
-    document.getElementById("nameSum").innerHTML = "Name: " + inputName.value;
-    document.getElementById("citySum").innerHTML = "City: " + inputCity.value;
-    document.getElementById("messageSum").innerHTML = "Resume of your message: " + message.value;
+    document.getElementById("probsSum").innerHTML = "<span class='redText'>Your problems: </span>" + buttonValue;
+    document.getElementById("lastnameSum").innerHTML = "<span class='redText'>Lastname: </span>" + inputLastname.value;
+    document.getElementById("nameSum").innerHTML = "<span class='redText'>Name: </span>" + inputName.value;
+    document.getElementById("citySum").innerHTML = "<span class='redText'>City: </span>" + inputCity.value;
+    document.getElementById("messageSum").innerHTML = "<span class='redText'>Resume of your message: </span>" + message.value;
 }
 
 function checkInputName() {

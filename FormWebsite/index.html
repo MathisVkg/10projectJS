@@ -12,7 +12,7 @@
 <title>form Website</title>
 </head>
 <body>
-    <div class="containerProbs" id="containerProbs" style="display: none;">
+    <div class="containerProbs" id="containerProbs">
         <h2 class="probTitle">What's your problems ?</h2>
         <div class="containerButton">
             <button class="buttonProb" id="buttonTag1">Hardware</button>
@@ -21,7 +21,7 @@
             <button class="buttonProb" id="buttonTag4">Payement</button>
         </div>
     </div>
-    <div class="containerForm" id="containerForm" >
+    <div class="containerForm" id="containerForm" style="display: none;">
         <div class="formCont">
             <h2 class="register">Registration form</h2>
             <div class="nameGroup">
@@ -48,14 +48,14 @@
             <button class="submit" id="submitTag">Submit</button>
         </div>
     </div>
-    <div class="containerThx" style="display: none;" id="thksTag">
+    <div class="containerThx" id="thksTag" style="display: none;">
         <h2 class="thaksTitle">Thanks You for your message</h2>
         <p class="legalMention">Your message has been sent to our team and will be processed as soon as possible.</p>
         <p class="recap">Summary</p>
-        <p class="probsSum" id="probsSum"></p>
-        <p class="nameSum" id="nameSum"></p>
-        <p class="lastnameSum" id="lastnameSum"></p>
-        <p class="citySum" id="citySum"></p>
+        <p class="textSum" id="probsSum"></p>
+        <p class="textSum" id="lastnameSum"></p>
+        <p class="textSum" id="nameSum"></p>
+        <p class="textSum" id="citySum"></p>
         <p class="messageSum" id="messageSum"></p>
     </div>
     <script src="script.js"></script>

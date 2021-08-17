@@ -128,3 +128,20 @@ select {
     margin-left: auto;
     margin-right: auto;
 }
+.recap {
+    margin-bottom: 0;
+    margin-top: 25px;
+    font-size: 23px;
+}
+.textSum {
+    font-size: 15px;
+}
+.redText {
+    color: #bd2727;
+    font-size: 17px;
+}
+.messageSum {
+    margin-top: 35px;
+    max-width: 400px;
+    height: 75px;
+}
