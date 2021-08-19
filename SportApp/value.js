@@ -11,8 +11,6 @@ let moduloWork;
 let moduloRest;
 let resultWork;
 let resultRest;
-let resultAllRest;
-let resultAllWork;
 let stockModulo;
 let stockResult = 0;
 
@@ -50,7 +48,6 @@ function checkRest() {
     if(restValue.value * exeValue.value > 60) {
         moduloRest = (restValue.value * exeValue.value) % 60;
         resultRest = (restValue.value * exeValue.value - moduloRest) / 60;
-        // resultAllRest = resultRest + ':' + moduloRest;
     } else {
         resultRest = 0;
         moduloRest = restValue.value * exeValue.value;
@@ -61,7 +58,6 @@ function checkWork() {
     if(workValue.value * exeValue.value > 60) {
         moduloWork = (workValue.value * exeValue.value) % 60;
         resultWork = (workValue.value * exeValue.value - moduloWork) / 60;
-        // resultAllWork = '0'+ resultWork + ':' + moduloWork;
     } else {
         resultWork = 0;
         moduloWork = workValue.value * exeValue.value;
