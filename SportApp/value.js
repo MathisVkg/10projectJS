@@ -14,7 +14,8 @@ let resultRest;
 let resultAllRest;
 let resultAllWork;
 let stockModulo;
-let stockResult;
+let stockResult = 0;
+
 
 workValue.addEventListener("click", () =>{
     countAllTime();
@@ -37,11 +38,12 @@ exeValue.addEventListener("click", () =>{
     document.querySelector(".exeNumber").innerHTML = exeValue.value;
 })
 roundValue.addEventListener("click", () =>{
+    countAllTime();
     document.querySelector(".roundNumber").innerHTML = roundValue.value + 'X';
 })
 
 button.addEventListener("click", () =>{
-    countAllTime();
+    startInterval();
 })
 
 function checkRest() {
@@ -50,7 +52,8 @@ function checkRest() {
         resultRest = (restValue.value * exeValue.value - moduloRest) / 60;
         // resultAllRest = resultRest + ':' + moduloRest;
     } else {
-        resultRest = restValue.value * exeValue.value;
+        resultRest = 0;
+        moduloRest = restValue.value * exeValue.value;
     }
 }
 
@@ -60,7 +63,8 @@ function checkWork() {
         resultWork = (workValue.value * exeValue.value - moduloWork) / 60;
         // resultAllWork = '0'+ resultWork + ':' + moduloWork;
     } else {
-        resultWork = workValue.value * exeValue.value;
+        resultWork = 0;
+        moduloWork = workValue.value * exeValue.value;
     }
 }
 
@@ -73,10 +77,38 @@ function countAllTime() {
     if(stockModulo > 60){
         stockModulo = stockModulo % 60;
         stockResult++;
-    } else {
-        stockModulo = '00';
-        console.log('stockModulo3: ', stockModulo);
+    } 
+    if (stockModulo === 60){ 
+        stockModulo = 30;
     }
-    timerAll.innerText = '0' + stockResult + ':' + stockModulo;
+    if(stockModulo === 0){
+        stockModulo = 30;
+        stockResult--;
+    }
+    stockResult = stockResult * roundValue.value;
+    if(stockResult >= 10){
+        timerAll.innerText = stockResult + ':' + stockModulo;
+    } else {
+        timerAll.innerText = '0' + stockResult + ':' + stockModulo;
+    }
     console.log('all: ' ,stockResult + ':' + stockModulo);
 }
+
+function startInterval(){
+    let intervalTimer = setInterval(() => {
+        stockModulo--;
+        if(stockResult == 0 && stockModulo == 0){
+            timerAll.innerText = '00:00';
+            clearInterval(intervalTimer);
+        }
+        if(stockModulo < 10){
+            stockModulo = '0' + stockModulo;
+        }
+        if(stockModulo === '00' && stockResult > 0){
+            stockResult--;
+            stockModulo = 59;
+        }
+        timerAll.innerText = '0' + stockResult + ':' + stockModulo;
+    }, 1000);
+}
+
