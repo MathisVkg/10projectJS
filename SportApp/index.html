@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="icon" href="img/dice-d20-solid.svg" />
+<title>Sport App</title>
+</head>
+<body>
+    <h1 class="sport">Corssfit App</h1>
+    <div class="containerPrep">
+        <h2>Interval Timer</h2>
+        <p class="timer" id="timer">03:50</p>
+        <button class="buttonPlay" id="startButton"><img src="img/play-solid.svg" alt="playbutton" class="playImg"></button>
+        <div class="containerSelect">
+            <div class="work" style="height: 51px;" id="workTarget">
+                <div class="workGroup">
+                    <img src="img/play-circle-regular.svg" alt="playbutton" class="selectButton">
+                    <p class="groupText">Work</p>
+                    <p class="workTimer"></p>
+                    <img src="img/caret-down-solid.svg" alt="arrowbutton" class="arrowButton" id="workId">
+                </div>
+                <form action="get">
+                    <select name="worktimer" id="workTimeSelect">
+                        <option value="5">00:05</option>
+                        <option value="10">00:10</option>
+                        <option value="15">00:15</option>
+                        <option value="20">00:20</option>
+                        <option value="25">00:25</option>
+                        <option value="30">00:30</option>
+                        <option value="35">00:35</option>
+                        <option value="40">00:40</option>
+                        <option value="45">00:45</option>
+                        <option value="50">00:50</option>
+                        <option value="55">00:55</option>
+                        <option value="60">01:00</option>
+                    </select>
+                </form>
+                <p class="textSelect">Select your time of work</p>
+            </div>
+            <div class="rest" style="height: 51px;" id="restTarget">
+                <div class="restGroup">
+                    <img src="img/pause-circle-regular.svg" alt="playbutton" class="selectButton">
+                    <p class="groupText">Rest</p>
+                    <p class="restTimer"></p>
+                    <img src="img/caret-down-solid.svg" alt="arrowbutton" class="arrowButton" id="restId">
+                </div>
+                <form action="get">
+                    <select name="resttimer" id="restTimeSelect">
+                        <option value="5">00:05</option>
+                        <option value="10">00:10</option>
+                        <option value="15">00:15</option>
+                        <option value="20">00:20</option>
+                        <option value="25">00:25</option>
+                        <option value="30">00:30</option>
+                        <option value="35">00:35</option>
+                        <option value="40">00:40</option>
+                        <option value="45">00:45</option>
+                        <option value="50">00:50</option>
+                        <option value="55">00:55</option>
+                        <option value="60">01:00</option>
+                    </select>
+                </form>
+                <p class="textSelect">Select your time of rest</p>
+            </div>
+            <div class="exercices" style="height: 51px;" id="exeTarget">
+                <div class="exeGroup">
+                    <img src="img/bolt-solid.svg" alt="playbutton" class="selectButton">
+                    <p class="groupText">Exercices</p>
+                    <p class="exeNumber"></p>
+                    <img src="img/caret-down-solid.svg" alt="arrowbutton" class="arrowButton" id="exeId">
+                </div>
+                <form action="get">
+                    <select name="exeNumber" id="exeNumberSelect">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </form>
+                <p class="textSelect">Select number of exercices</p>
+            </div>
+            <div class="rounds" style="height: 51px;" id="roundTarget">
+                <div class="roundGroup">
+                    <img src="img/undo-alt-solid.svg" alt="playbutton" class="selectButton">
+                    <p class="groupText">Rounds</p>
+                    <p class="roundNumber"></p>
+                    <img src="img/caret-down-solid.svg" alt="arrowbutton" class="arrowButton" id="roundId">
+                </div>
+                <form action="get">
+                    <select name="roundNumber" id="roundNumberSelect">
+                        <option value="1">1X</option>
+                        <option value="2">2X</option>
+                        <option value="3">3X</option>
+                        <option value="4">4X</option>
+                        <option value="5">5X</option>
+                    </select>
+                </form>
+                <p class="textSelect">Select number of rounds</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="value.js"></script>
+</body>
+</html>

@@ -8,6 +8,7 @@ let selectLenght = document.getElementById("selectLenght");
 let selectCharac = document.getElementById("selectCharacter");
 let submit = document.getElementById("submit");
 let valueLenght;
+let valueCharac;
 
 submit.addEventListener("click", () => {
     valueLenght = this.selectLenght.value;
