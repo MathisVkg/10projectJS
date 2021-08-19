@@ -21,13 +21,13 @@ playButton.addEventListener("click", () =>{
 workTag.addEventListener("click", () =>{
     if(workTarget.getBoundingClientRect().height < 55) {
         workTarget.setAttribute("style", "height: 270px");
-        workTag.setAttribute("style", "transform: rotate(180deg)");
+        // workTag.setAttribute("style", "transform: rotate(180deg)");
         restTarget.setAttribute("style", "display: none");
         exeTarget.setAttribute("style", "display: none");
         roundTarget.setAttribute("style", "display: none");
     }  else {
         workTarget.setAttribute("style", "height: 51px");
-        workTag.setAttribute("style", "transform: rotate(0deg)");
+        // workTag.setAttribute("style", "transform: rotate(0deg)");
         setTimeout(() => {
             restTarget.setAttribute("style", "display: flex; height: 51px;");
             exeTarget.setAttribute("style", "display: flex; height: 51px;");
@@ -38,13 +38,13 @@ workTag.addEventListener("click", () =>{
 restTag.addEventListener("click", () =>{
     if(restTarget.getBoundingClientRect().height < 55) {
         restTarget.setAttribute("style", "height: 270px");
-        restTag.setAttribute("style", "transform: rotate(180deg)");
+        // restTag.setAttribute("style", "transform: rotate(180deg)");
         workTarget.setAttribute("style", "display: none");
         exeTarget.setAttribute("style", "display: none");
         roundTarget.setAttribute("style", "display: none");
     }  else {
         restTarget.setAttribute("style", "height: 51px");
-        restTag.setAttribute("style", "transform: rotate(0deg)");
+        // restTag.setAttribute("style", "transform: rotate(0deg)");
         setTimeout(() => {
             workTarget.setAttribute("style", "display: flex; height: 51px;");
             exeTarget.setAttribute("style", "display: flex; height: 51px;");
@@ -55,13 +55,13 @@ restTag.addEventListener("click", () =>{
 exeTag.addEventListener("click", () =>{
     if(exeTarget.getBoundingClientRect().height < 55) {
         exeTarget.setAttribute("style", "height: 270px");
-        exeTag.setAttribute("style", "transform: rotate(180deg)");
+        // exeTag.setAttribute("style", "transform: rotate(180deg)");
         restTarget.setAttribute("style", "display: none");
         workTarget.setAttribute("style", "display: none");
         roundTarget.setAttribute("style", "display: none");
     }  else {
         exeTarget.setAttribute("style", "height: 51px");
-        exeTag.setAttribute("style", "transform: rotate(0deg)");
+        // exeTag.setAttribute("style", "transform: rotate(0deg)");
         setTimeout(() => {
             restTarget.setAttribute("style", "display: flex; height: 51px;");
             workTarget.setAttribute("style", "display: flex; height: 51px;");
@@ -72,13 +72,13 @@ exeTag.addEventListener("click", () =>{
 roundTag.addEventListener("click", () =>{
     if(roundTarget.getBoundingClientRect().height < 55) {
         roundTarget.setAttribute("style", "height: 270px");
-        roundTag.setAttribute("style", "transform: rotate(180deg)");
+        // roundTag.setAttribute("style", "transform: rotate(180deg)");
         restTarget.setAttribute("style", "display: none");
         exeTarget.setAttribute("style", "display: none");
         workTarget.setAttribute("style", "display: none");
     }  else {
         roundTarget.setAttribute("style", "height: 51px");
-        roundTag.setAttribute("style", "transform: rotate(0deg)");
+        // roundTag.setAttribute("style", "transform: rotate(0deg)");
         setTimeout(() => {
             restTarget.setAttribute("style", "display: flex; height: 51px;");
             exeTarget.setAttribute("style", "display: flex; height: 51px;");
