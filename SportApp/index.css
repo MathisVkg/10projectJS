@@ -95,7 +95,7 @@ select {
 .work {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     background-color: #49e67d6e;
     border-radius: 12px;
     padding: 0 25px;
@@ -115,7 +115,7 @@ select {
 .rest {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     background-color: #da403b6e;
     border-radius: 12px;
     padding: 0 25px;
@@ -135,7 +135,7 @@ select {
 .exercices {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     background-color: #378cdb6e;
     border-radius: 12px;
     padding: 0 25px;
@@ -155,7 +155,7 @@ select {
 .rounds {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     background-color: #a7a7a76e;
     border-radius: 12px;
     padding: 0 25px;
