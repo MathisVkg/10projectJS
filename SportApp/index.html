@@ -107,9 +107,36 @@
                 </form>
                 <p class="textSelect">Select number of rounds</p>
             </div>
+            <div class="timerApp" style="display: none;">
+                <div class="exeGroupTimer">
+                    <p class="numberExe">Exercice</p>
+                    <p class="numberExe" id="numberExe"></p>
+                </div>
+                <div class="roundGroupTimer">
+                    <p class="numberRound">Round</p>
+                    <p class="numberRound" id="numberRound"></p>
+                    <img src="img/dot-circle-solid.svg" alt="round" class="roundTimer" id="round" style="display: none; width: 20px;">
+                </div>
+                <div class="timerActiveGroup">
+                    <p class="timerWorkRest" id="timerTarget">00:30</p>
+                    <p class="stade" id="stadeTarget">Work</p>
+                </div>
+                <div class="buttonGroup">
+                    <img src="img/volume-up-solid.svg" alt="volume" class="volumeOnTimer" id="volumeOn" style="width: 20px;">
+                    <img src="img/volume-mute-solid.svg" alt="volume" class="volumeOffTimer" id="volumeOff" style="display: none; width: 20px;">
+                    <img src="img/play-circle-regular.svg" alt="playbutton" class="buttonPlayTimer" id="playButton" style="display: none; width: 35px;" >
+                    <img src="img/pause-circle-regular.svg" alt="pausebutton" class="buttonPauseTimer" id="pauseButton" style="width: 35px;">
+                    <p class="cancel" id="cancelTag">Cancel</p>
+                </div>
+                <div class="timerGroup">
+                    <img src="img/clock-regular.svg" alt="clock" class="clockTimer" style="width: 20px;">
+                    <p class="timerAll" id="timerAll"></p>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="script.js"></script>
-    <script src="value.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/value.js"></script>
+    <script src="js/valueTimer.js"></script>
 </body>
 </html>

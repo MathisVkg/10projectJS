@@ -7,6 +7,7 @@ let exeValue = document.getElementById("exeNumberSelect");
 let roundValue = document.getElementById("roundNumberSelect");
 let timerAll = document.getElementById("timer");
 let button = document.getElementById("startButton");
+let timerAllTarget = document.getElementById("timerAll");
 let moduloWork;
 let moduloRest;
 let resultWork;
@@ -42,6 +43,8 @@ roundValue.addEventListener("click", () =>{
 
 button.addEventListener("click", () =>{
     startInterval();
+    setAppTimer();
+    writeData();
 })
 
 function checkRest() {
@@ -94,7 +97,7 @@ function startInterval(){
     let intervalTimer = setInterval(() => {
         stockModulo--;
         if(stockResult == 0 && stockModulo == 0){
-            timerAll.innerText = '00:00';
+            timerAllTarget.innerText = 'Rest Time: ' + '00:00';
             clearInterval(intervalTimer);
         }
         if(stockModulo < 10){
@@ -104,7 +107,18 @@ function startInterval(){
             stockResult--;
             stockModulo = 59;
         }
-        timerAll.innerText = '0' + stockResult + ':' + stockModulo;
+        timerAllTarget.innerText = 'Rest Time: ' + '0' + stockResult + ':' + stockModulo;
     }, 1000);
 }
 
+function setAppTimer() {
+    document.querySelector('h2').setAttribute('style','display: none');
+    timerAll.setAttribute('style','display: none');
+    button.setAttribute('style', 'display: none');
+    workTarget.setAttribute("style", "display: none");
+    restTarget.setAttribute("style", "display: none");
+    exeTarget.setAttribute("style", "display: none");
+    roundTarget.setAttribute("style", "display: none");
+    document.querySelector('.containerSelect').setAttribute('style','height: 535px; margin-top: -25px; background-color: #ca3737');
+    document.querySelector('.timerApp').setAttribute('style', 'display: flex');
+}
