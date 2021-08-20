@@ -14,6 +14,8 @@ let resultWork;
 let resultRest;
 let stockModulo;
 let stockResult = 0;
+let stockTimer;
+let stockRest;
 
 
 workValue.addEventListener("click", () =>{
@@ -45,6 +47,11 @@ button.addEventListener("click", () =>{
     startInterval();
     setAppTimer();
     writeData();
+    writeBegin();
+    stockTimer = workValue.value;
+    console.log('stockTimer: ', stockTimer);
+    stockRest = restValue.value;
+    console.log('stockRest: ', stockRest);
 })
 
 function checkRest() {
@@ -90,7 +97,6 @@ function countAllTime() {
     } else {
         timerAll.innerText = '0' + stockResult + ':' + stockModulo;
     }
-    console.log('all: ' ,stockResult + ':' + stockModulo);
 }
 
 function startInterval(){
