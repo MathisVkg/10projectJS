@@ -86,3 +86,17 @@ roundTag.addEventListener("click", () =>{
         }, 350);
     }
 })
+
+
+function setAppTimer() {
+    document.querySelector('h2').setAttribute('style','display: none');
+    timerAll.setAttribute('style','display: none');
+    button.setAttribute('style', 'display: none');
+    workTarget.setAttribute("style", "display: none");
+    restTarget.setAttribute("style", "display: none");
+    exeTarget.setAttribute("style", "display: none");
+    roundTarget.setAttribute("style", "display: none");
+    document.querySelector('.containerSelect').setAttribute('style','height: 535px; margin-top: -25px; background-color: #ca3737');
+    document.querySelector('.timerApp').setAttribute('style', 'display: flex');
+}
+
