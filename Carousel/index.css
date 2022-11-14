@@ -1,0 +1,51 @@
+
+body {
+    margin: O;
+    background-color: #303030;
+    font-family: "lato", sans-serif;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-top: 17%;
+    color: white;
+    border-radius: 8px 0 8px 0;
+    width: 600px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.38s ease-in-out;
+}
+
+.square {
+    display: flex;
+}
+
+.purple {
+    background-color: #8a50e7;
+    box-shadow: 0 0 4px #0000005e;
+}
+
+.red {
+    background-color: #ee6767;
+    box-shadow: 0 0 4px #0000005e;
+}
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: space-between;
+    height: 80px;
+}
+.fa-arrow-up {
+    margin-bottom: 15px;
+}
+
+img {
+    width: 300px;
+    margin: 0 15px;
+    border-radius: 4px;
+}
