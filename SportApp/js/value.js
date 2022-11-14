@@ -44,14 +44,12 @@ roundValue.addEventListener("click", () =>{
 })
 
 button.addEventListener("click", () =>{
+    stockTimer = workValue.value;
+    stockRest = restValue.value;
     startInterval();
     setAppTimer();
     writeData();
     writeBegin();
-    stockTimer = workValue.value;
-    console.log('stockTimer: ', stockTimer);
-    stockRest = restValue.value;
-    console.log('stockRest: ', stockRest);
 })
 
 function checkRest() {

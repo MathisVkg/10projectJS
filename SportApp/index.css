@@ -272,7 +272,6 @@ select {
     transition: 0.5s ease-in-out;
 }
 .cancel:hover {
-    transform: translateY(-5px);
     color: black;
 }
 

@@ -59,6 +59,9 @@ function stopTimer(){
     roundTarget.setAttribute("style", "display: flex; height: 51px");
     document.querySelector('.containerSelect').setAttribute('style','height: 270px; margin-top: 15px; background-color: #ffffff');
     document.querySelector('.timerApp').setAttribute('style', 'display: none');
+    exeStock = 1;
+    clearInterval(intervalRest);
+    clearInterval(intervalWork);
     clearInterval(intervalTimer);
 }
 
@@ -90,9 +93,7 @@ function writeRest(){
     let intervalRest = setInterval(() => {
         stockRest--;
         if(exeStock == exeValue.value && stockRest == 0){
-            clearInterval(intervalRest);
-            clearInterval(intervalWork);
-            timerTarget.innerHTML = '00:00';
+            writeWin();
         }
         if(stockRest == 0){
             writeWork();
@@ -123,4 +124,16 @@ function writeWork(){
         }
         timerTarget.innerHTML = '00:' + stockTimer;
     }, 1000);
+}
+
+
+
+
+function writeWin(){
+    timerTarget.innerHTML = 'You finish your set !';
+    textTarget.innerHTML = 'Good Job';
+    clearInterval(intervalWork);
+    timerTarget.innerHTML = 'You finish your set !';
+    clearInterval(intervalRest);
+    timerTarget.innerHTML = 'You finish your set !';
 }
